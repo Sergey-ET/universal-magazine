@@ -1,14 +1,11 @@
 .header
   background-color: $dark
-.logo
-  &-header
-    height: 40px
 .navbar
   display: flex
   justify-content: space-between
   align-items: center
   padding-top: 15px
-  padding-bottom: 490px
+  padding-bottom: 15px
   &-menu
     &__list
       display: flex
@@ -17,8 +14,11 @@
       margin: 0
       padding: 0
     &__item
-      &:not(:last-child)
+      &:not(:nth-last-child(-n+2))
         margin-right: 30px
+      &__mobile
+        &--visible
+          display: none
     &__link
       font-style: normal
       font-weight: 900
@@ -26,6 +26,8 @@
       line-height: 20px
       text-decoration: none
       color: $light
+    &__button
+      display: none
   &-button
     padding: 9px 65px 10px 65px
     font-style: normal
@@ -37,3 +39,7 @@
     color: $light
     border: none
     border-radius: 10px
+    cursor: pointer
+    &__mobile
+      &--visible
+        display: none

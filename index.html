@@ -27,10 +27,11 @@
       media="print"
       onload="this.media='all'"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header__mobile--fixed">
       <div class="container">
         <div class="navbar">
           <a href="#" class="logo-header">
@@ -63,9 +64,23 @@
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Web Design</a>
               </li>
+              <li class="navbar-menu__item navbar-menu__item__mobile--visible">
+                <button
+                  class="button navbar-button navbar-button__mobile--visible"
+                >
+                  Оставить заявку
+                </button>
+              </li>
             </ul>
           </nav>
-          <button class="button navbar-button">Оставить заявку</button>
+          <button class="button navbar-button navbar-button__mobile--hidden">
+            Оставить заявку
+          </button>
+          <button class="menu-button navbar-menu__button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
         </div>
         <!-- /.navbar -->
       </div>
@@ -74,6 +89,8 @@
     <!-- /.header -->
 
     <main class="homepage">
+      <section class="background"></section>
+
       <section class="recommendations"></section>
 
       <section class="useful"></section>
@@ -89,6 +106,10 @@
 
     <footer class="footer"></footer>
 
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
