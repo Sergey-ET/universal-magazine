@@ -30,22 +30,29 @@ $(document).ready(function () {
     }
   })
 
+  $(document).click(function (e) {
+    if ($(e.target).is('.modal__overlay')) {
+      $('.modal__overlay').removeClass('modal__overlay--visible')
+      $('.modal__dialog').removeClass('modal__dialog--visible')
+    }
+  })
+
   // Валидация форм
   $('.form').each(function () {
     $(this).validate({
       errorClass: 'invalid',
       messages: {
         name: {
-          required: 'Please specify your name',
-          minlength: 'At least 2 characters required',
+          required: 'Пожалуйста, укажите Ваше имя',
+          minlength: 'Введите как минимум 2 буквы',
         },
         phone: {
-          required: 'Please enter your phone number',
-          minlength: 'Please enter at least 10 characters',
+          required: 'Пожалуйста, введите Ваш номер телефона',
+          minlength: 'Введите как минимум 10 цифр',
         },
         email: {
-          required: 'We need your email address to contact you',
-          email: 'Your email address must be in the format of name@domain.com',
+          required: 'Пожалуйста, введите адрес Вашей эл. почты',
+          email: 'Адрес эл. почты должен быть в формате name@domain.com',
         },
       },
     })

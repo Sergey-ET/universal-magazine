@@ -4,7 +4,7 @@
   display: flex
   justify-content: space-between
   align-items: center
-  padding-top: 15px
+  padding-top: 14px
   padding-bottom: 15px
   &-menu
     &__list
@@ -16,7 +16,7 @@
     &__item
       &:not(:nth-last-child(-n+2))
         margin-right: 30px
-      &__mobile
+      &--mobile
         &--visible
           display: none
     &__link
@@ -26,7 +26,8 @@
       line-height: 20px
       text-decoration: none
       color: $light
-    &__button
+  &__menu
+    &-button
       display: none
   &-button
     padding: 9px 65px 10px 65px
@@ -40,6 +41,6 @@
     border: none
     border-radius: 10px
     cursor: pointer
-    &__mobile
+    &--mobile
       &--visible
         display: none

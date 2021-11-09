@@ -144,7 +144,7 @@ textarea {
 
 .invalid {
   font-size: 15px;
-  color: #ffffff;
+  color: #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -504,7 +504,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
 }
 
@@ -524,7 +524,7 @@ template {
   margin-right: 30px;
 }
 
-.navbar-menu__item__mobile--visible {
+.navbar-menu__item--mobile--visible {
   display: none;
 }
 
@@ -537,7 +537,7 @@ template {
   color: #ffffff;
 }
 
-.navbar-menu__button {
+.navbar__menu-button {
   display: none;
 }
 
@@ -555,12 +555,12 @@ template {
   cursor: pointer;
 }
 
-.navbar-button__mobile--visible {
+.navbar-button--mobile--visible {
   display: none;
 }
 
 .background {
-  height: 475px;
+  height: 472px;
   padding-top: 100px;
   background-color: #262D33;
   color: #ffffff;
@@ -702,7 +702,7 @@ svg {
 }
 
 @media (max-width: 768px) {
-  .header__mobile--fixed {
+  .header--mobile--fixed {
     position: fixed;
     left: 0;
     right: 0;
@@ -742,15 +742,15 @@ svg {
   .navbar-menu__item:not(:nth-last-child(-n+2)) {
     margin-right: 0;
   }
-  .navbar-menu__item__mobile--visible {
+  .navbar-menu__item--mobile--visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar-button__mobile--hidden {
+  .navbar-button--mobile--hidden {
     display: none;
   }
-  .navbar-button__mobile--visible {
+  .navbar-button--mobile--visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header header__mobile--fixed">
+    <header class="header header--mobile--fixed">
       <div class="container">
         <div class="navbar">
           <a href="#" class="logo-header">
@@ -64,10 +64,10 @@
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Web Design</a>
               </li>
-              <li class="navbar-menu__item navbar-menu__item__mobile--visible">
+              <li class="navbar-menu__item navbar-menu__item--mobile--visible">
                 <button
                   data-toggle="modal"
-                  class="button navbar-button navbar-button__mobile--visible"
+                  class="button navbar-button navbar-button--mobile--visible"
                 >
                   Оставить заявку
                 </button>
@@ -76,11 +76,11 @@
           </nav>
           <button
             data-toggle="modal"
-            class="button navbar-button navbar-button__mobile--hidden"
+            class="button navbar-button navbar-button--mobile--hidden"
           >
             Оставить заявку
           </button>
-          <button class="menu-button navbar-menu__button">
+          <button class="menu-button navbar__menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -93,7 +93,9 @@
     <!-- /.header -->
 
     <main class="homepage">
-      <section class="background"></section>
+      <section class="background">
+        <h2 class="visually-hidden">Пустая секция</h2>
+      </section>
 
       <section class="recommendations"></section>
 
