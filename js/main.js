@@ -57,4 +57,15 @@ $(document).ready(function () {
       },
     })
   })
+
+  var tabsItem = $('.reco-tabs__item')
+  var contentItem = $('.reco-content__item')
+
+  tabsItem.on('click', function (event) {
+    var activeContent = $(this).attr('data-target')
+    tabsItem.removeClass('reco-tabs__item--active')
+    contentItem.removeClass('reco-content__item--active')
+    $(activeContent).addClass('reco-content__item--active')
+    $(this).addClass('reco-tabs__item--active')
+  })
 })
