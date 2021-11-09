@@ -5,7 +5,7 @@
     display: grid
     grid-template-columns: 877px 1fr
   &-content
-    max-height: 570px
+    min-height: 570px
     &__background
       position: absolute
       border-radius: 10px 0 0 10px
@@ -78,7 +78,10 @@
   &-arrow
     margin-left: 5px
   &-tabs
-    max-height: 570px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 570px
     border-radius: 0 10px 10px 0
     background-color: #fff
     &__title
@@ -98,7 +101,6 @@
       background-color: #fff
       &:last-child
         border-radius: 0 0 10px 0
-        border-bottom: 1px solid #D9DADB
       &--active
         background-color: #F5F5F5
       &-title
@@ -129,17 +131,17 @@
         line-height: 20px
         color: $text
         &--first
-          margin-top: 10px
+          margin-top: 8px
           margin-bottom: 17px
         &--second
-          margin-top: 9px
+          margin-top: 8px
           margin-bottom: 18px
         &--third
-          margin-top: 9px
+          margin-top: 8px
           margin-bottom: 18px
         &--fourth
-          margin-top: 9px
+          margin-top: 8px
           margin-bottom: 38px
         &--fifth
           margin-top: 8px
-          margin-bottom: 26px
+          margin-bottom: 28px

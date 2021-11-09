@@ -8,6 +8,13 @@
           margin-right: 20px
     &-button
       padding: 10px 40px
+  .reco
+    &-wrapper
+      grid-template-columns: 700px 1fr
+    &-content
+      &__background
+        width: 700px
+        object-fit: cover
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -26,6 +33,17 @@
   .modal
     &__dialog
       width: 87%
+  .reco
+    &-wrapper
+      grid-template-columns: 500px 1fr
+    &-content
+      &__background
+        width: 500px
+        object-fit: cover
+    &-title
+      max-width: 430px
+      font-size: 30px
+      line-height: 40px
 @media (max-width: 768px)
   .header
     &--mobile
@@ -48,6 +66,7 @@
       top: 65px
       right: 0
       bottom: 0
+      background-color: $dark
       &--visible
         display: block
       &__list
@@ -90,7 +109,38 @@
     &__button
       order: 1
       margin-top: 15px
-@media (max-width: 576px)
-  .logo
-    &-header
-      max-width: 123px
+  .reco
+    &-wrapper
+      grid-template-columns: 70% 30%
+    &-content
+      &__background
+        width: 70%
+        object-fit: cover
+    &-author
+      left: 20px
+    &-theme
+      left: 20px
+    &-title
+      left: 20px
+      width: 50%
+      font-size: 16px
+      line-height: 20px
+    &-button
+      left: 20px
+    &-tabs
+      &__title
+        margin: 20px auto 19px auto
+        font-size: 8px
+        line-height: 10px
+      &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        min-height: 103px
+        &-title
+          margin: 0
+          font-size: 8px
+          line-height: 10px
+        &-description
+          display: none
