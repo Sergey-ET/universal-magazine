@@ -93,11 +93,13 @@
     <!-- /.header -->
 
     <main class="homepage">
+      <h1 class="visually-hidden">Главная страница электронного журнала</h1>
       <section class="background">
         <h2 class="visually-hidden">Пустая секция</h2>
       </section>
 
       <section class="recommendations">
+        <h2 class="visually-hidden">Рекомендованные статьи</h2>
         <div class="container">
           <div class="reco-wrapper">
             <div class="reco-content">
@@ -126,7 +128,7 @@
                 </div>
                 <!-- /.author -->
                 <span class="reco-theme">Javascript</span>
-                <h2 class="reco-title">Расширение Chrome защищает от атак</h2>
+                <h3 class="reco-title">Расширение Chrome защищает от атак</h3>
                 <a href="./article-1.html" class="reco-button">
                   Читать далее
                   <img
@@ -159,9 +161,9 @@
                 </div>
                 <!-- /.author -->
                 <span class="reco-theme">Javascript</span>
-                <h2 class="reco-title">
+                <h3 class="reco-title">
                   На каком стандарте писать скрипты, если я фрилансер
-                </h2>
+                </h3>
                 <a href="./article-1.html" class="reco-button">
                   Читать далее
                   <img
@@ -194,9 +196,9 @@
                 </div>
                 <!-- /.author -->
                 <span class="reco-theme">HTML</span>
-                <h2 class="reco-title">
+                <h3 class="reco-title">
                   Правильно вставляем картинку на сайт
-                </h2>
+                </h3>
                 <a href="./article-1.html" class="reco-button">
                   Читать далее
                   <img
@@ -229,7 +231,7 @@
                 </div>
                 <!-- /.author -->
                 <span class="reco-theme">Web Design</span>
-                <h2 class="reco-title">ТОП-10 плагинов для Figma</h2>
+                <h3 class="reco-title">ТОП-10 плагинов для Figma</h3>
                 <a href="./article-1.html" class="reco-button">
                   Читать далее
                   <img
@@ -262,7 +264,7 @@
                 </div>
                 <!-- /.author -->
                 <span class="reco-theme">CSS</span>
-                <h2 class="reco-title">Возможности CSS Grid Layout</h2>
+                <h3 class="reco-title">Возможности CSS Grid Layout</h3>
                 <a href="./article-1.html" class="reco-button">
                   Читать далее
                   <img
@@ -343,7 +345,61 @@
         <!-- /.container -->
       </section>
 
-      <section class="useful"></section>
+      <section class="useful">
+        <h2 class="visually-hidden">Полезная информация</h2>
+        <div class="container">
+          <div class="useful-wrapper">
+            <div class="useful-box">
+              <p class="useful-info">25 способов настроить слайдер</p>
+              <img
+                src="./img/useful/useful-1.webp"
+                alt="Ноутбук на столе"
+                class="useful-image"
+                width="65"
+                height="65"
+              />
+            </div>
+            <!-- /.useful-box -->
+            <div class="useful-box">
+              <p class="useful-info">Главные фишки фрилансера</p>
+              <img
+                src="./img/useful/useful-2.webp"
+                alt="Мужчина у доски"
+                class="useful-image"
+                width="65"
+                height="65"
+              />
+            </div>
+            <!-- /.useful-box -->
+            <div class="useful-box">
+              <p class="useful-info">
+                Техника управления временем “Помодоро”
+              </p>
+              <img
+                src="./img/useful/useful-3.webp"
+                alt="Настольные часы"
+                class="useful-image"
+                width="65"
+                height="65"
+              />
+            </div>
+            <!-- /.useful-box -->
+            <div class="useful-box">
+              <p class="useful-info">Что нужно знать о Git и GitHub</p>
+              <img
+                src="./img/useful/useful-1.webp"
+                alt="Вид стола сверху. На столе смартфон, клавиатура и маленький горшок с растением"
+                class="useful-image"
+                width="65"
+                height="65"
+              />
+            </div>
+            <!-- /.useful-box -->
+          </div>
+          <!-- /.useful-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
 
       <section class="articles"></section>
 
@@ -372,7 +428,7 @@
             />
           </svg>
         </a>
-        <h3 class="modal__title modal__title--form">Оставить заявку</h3>
+        <h2 class="modal__title modal__title--form">Оставить заявку</h2>
         <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
