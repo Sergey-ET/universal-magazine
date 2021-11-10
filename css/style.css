@@ -948,7 +948,7 @@ svg {
 
 .articles {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 60px;
   background-color: #edeff0;
 }
 
@@ -1455,6 +1455,62 @@ svg {
           justify-content: space-between;
 }
 
+.investigation {
+  padding: 50px 0 55px 0;
+  background-image: url(../img/investigation/investigation.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+}
+
+.investigation-title {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  max-width: 946px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.investigation-button {
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 161px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #4592FF;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.investigation-arrow {
+  margin-left: 5px;
+}
+
+.parallax-window {
+  background: transparent;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1615,6 +1671,10 @@ svg {
   }
   .card-tags__tag:nth-child(12) {
     margin-bottom: 10px;
+  }
+  .investigation-title {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
@@ -1796,6 +1856,10 @@ svg {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .investigation-title {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
