@@ -18,6 +18,28 @@
   .useful
     &-box
       padding: 5px 15px 5px 15px
+  .articles
+    &-wrapper
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(6, 170px)
+      grid-gap: 20px
+  .card
+    &-check
+      grid-column: 3 / 4
+      grid-row: 5 / 6
+    &-links
+      grid-column: 1 / 2
+      grid-row: 5 / 6
+    &-tags
+      grid-column: 3 / 4
+      grid-row: 3 / 5
+    &-short
+      &--second
+        grid-column: 2 / 3
+        grid-row: 5 / 6
+      &--fourth
+        grid-column: 1 / 2
+        grid-row: 6 / 7
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -58,6 +80,29 @@
         border-right: 1px solid #3d434a
       &:nth-child(-n+2)
         border-bottom: 1px solid #3d434a
+  .articles
+    &-wrapper
+      grid-template-rows: repeat(6, 210px)
+      grid-gap: 20px
+  .card
+    &-main
+      grid-column: 1 / 4
+      grid-row: 1 / 3
+    &-check
+      grid-column: 2 / 3
+      grid-row: 6 / 7
+    &-popular
+      grid-column: 3 / 4
+      grid-row: 5 / 7
+    &-tags
+      &__tag
+        margin-bottom: 10px
+        &:last-child
+          margin-right: 0
+        &:nth-child(8)
+          margin-right: 6px
+        &:nth-child(12)
+          margin-bottom: 10px
 @media (max-width: 768px)
   .header
     &--mobile
@@ -166,3 +211,34 @@
         border-right: none
       &:last-child
         border-bottom: none
+  .articles
+    &-wrapper
+      display: flex
+      flex-direction: column
+  .card
+    &-instruments
+      &__image
+        object-fit: cover
+    &-links
+      &__images
+        justify-content: space-evenly
+@media (max-width: 576px)
+  .card
+    &-main
+      &__general
+        flex-direction: column
+      &__image
+        margin-left: auto
+      &__info
+        padding-right: 20px
+        &-about
+          margin-bottom: 0
+      &__author
+        padding: 12px 10px 13px 10px
+        &-cite
+          font-size: 10px
+          line-height: 12px
+          &--bold
+            font-weight: 900
+            font-size: 10px
+            line-height: 12px

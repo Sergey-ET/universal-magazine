@@ -1,0 +1,312 @@
+.articles
+  padding-top: 15px
+  padding-bottom: 15px
+  background-color: #edeff0
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 3fr)
+    grid-template-rows: repeat(4, 170px)
+    grid-gap: 30px
+  &-card
+    background-color: $light
+    border-radius: 10px
+.card
+  &-main
+    grid-column: 1 / 3
+    grid-row: 1 / 3
+    &__general
+      display: flex
+      padding: 15px 0 0 35px
+      border-bottom: 1px solid #D9DADB
+    &__author
+      display: flex
+      align-items: center
+      justify-content: stretch
+      padding: 12px 35px 13px 35px
+      &-avatar
+        border-radius: 50%
+        margin-right: 10px
+      &-cite
+        margin-right: 15px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $text
+        &--bold
+          margin-right: 5px
+          font-style: normal
+          font-weight: 900
+          font-size: 14px
+          line-height: 20px
+          display: flex
+          align-items: center
+          color: $dark
+      &-count
+        margin-left: 5px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+    &__info
+      &-tag
+        display: inline-block
+        margin-top: 20px
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6E99AE
+      &-title
+        margin: 0
+        margin-bottom: 25px
+        font-family: "Roboto Slab", serif
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $dark
+      &-about
+        margin: 0
+        margin-bottom: 49px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $text
+  &-popular
+    grid-column: 3 / 4
+    grid-row: 1 / 3
+    padding: 19px 26px 25px 25px
+    background-image: url(../img/articles/articles-lamp.webp)
+    background-repeat: no-repeat
+    background-size: cover
+    &__info
+      display: flex
+      flex-direction: column
+    &__tag
+      max-width: 92px
+      padding: 5px 12px
+      margin-bottom: 116px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      background-color: #3DC47E
+      color: $light
+      border-radius: 3px
+    &__section
+      margin-bottom: 23px
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #E7D9FF
+    &__title
+      margin: 0
+      margin-bottom: 27px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $light
+    &__author
+      display: flex
+      align-items: center
+      &-avatar
+        margin-right: 10px
+        border-radius: 50%
+      &-name
+        margin-bottom: 2px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $light
+        mix-blend-mode: normal
+        opacity: 0.85
+      &-details
+        display: flex
+        align-items: center
+      &-date
+        display: inline-block
+        margin-right: 7px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        opacity: 0.4
+      &-count
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        opacity: 0.4
+        &--first
+          margin-right: 7px
+      &-comments
+        margin-right: 5px
+      &-like
+        margin-right: 5px
+  &-check
+    position: relative
+    grid-column: 4 / 5
+    grid-row: 1 / 2
+    background-color: #3BBDC4
+    &__about
+      padding: 25px 25px 19px 25px
+      border-bottom: 1px solid #96E2E3
+    &__image
+      position: absolute
+      top: 20px
+      right: 10px
+    &__title
+      margin: 0
+      margin-bottom: 10px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $light
+    &__info
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #C1F4F5
+    &__footer
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 12px 90px 13px 92px
+    &__download
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      text-decoration: none
+  &-instruments
+    grid-column: 1 / 2
+    grid-row: 3 / 5
+    &__image
+      border-radius: 10px 10px 0 0
+      width: 100%
+      object-fit: cover
+    &__about
+      padding: 10px 25px 30px 25px
+    &__title
+      margin: 0
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $dark
+  &-tags
+    grid-column: 4 / 5
+    grid-row: 2 / 4
+    &-name
+      padding: 20px 25px 19px 25px
+      font-style: normal
+      font-size: 14px
+      line-height: 20px
+      text-transform: uppercase
+      color: $dark
+      border-bottom: 1px solid #D9DADB
+    &-title
+      margin: 0
+    &__wrapper
+      padding: 25px 28px 30px 25px
+    &__tag
+      display: inline-block
+      padding: 5px 15px 5px 14px
+      margin-right: 6px
+      margin-bottom: 13px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      text-decoration: none
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      &:nth-child(even)
+        margin-right: 0
+      &:nth-child(10)
+        margin-right: 8px
+      &:nth-child(11)
+        margin-right: 0
+      &:nth-child(12)
+        margin-right: 8px
+        margin-bottom: 0
+      &:nth-child(13)
+        margin-bottom: 0
+  &-short
+    padding: 25px 25px 30px 25px
+    &--first
+      grid-column: 2 / 3
+      grid-row: 3 / 4
+    &--second
+      grid-column: 3 / 4
+      grid-row: 3 / 4
+    &--third
+      grid-column: 2 / 3
+      grid-row: 4 / 5
+    &--fourth
+      grid-column: 3 / 4
+      grid-row: 4 / 5
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $dark
+    &__info
+      margin: 0
+      margin-bottom: 9px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text
+      &--second
+        margin-bottom: 28px
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $icon
+  &-links
+    grid-column: 4 / 5
+    grid-row: 4 / 5
+    padding: 30px 37px 40px 36px
+    text-align: center
+    &__title
+      margin: 0
+      margin-bottom: 25px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $dark
+    &__images
+      display: flex
+      justify-content: space-between
