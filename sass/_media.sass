@@ -1,3 +1,19 @@
+@media (min-width: 993px)
+  .card
+    &-links
+      &__images
+        &-facebook
+          &:hover
+            border-radius: 50%
+            box-shadow: 0 0 20px #4267B2
+        &-twitter
+          &:hover
+            border-radius: 50%
+            box-shadow: 0 0 20px #1DA1F2
+        &-youtube
+          &:hover
+            border-radius: 50%
+            box-shadow: 0 0 20px #FF0000
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -91,6 +107,8 @@
     &-check
       grid-column: 2 / 3
       grid-row: 6 / 7
+      &__footer
+        padding: 11px 78px 13px 78px
     &-popular
       grid-column: 3 / 4
       grid-row: 5 / 7

@@ -621,8 +621,8 @@ template {
 
 .modal__close {
   position: absolute;
-  top: 17px;
-  right: 18px;
+  top: 15px;
+  right: 15px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -642,6 +642,8 @@ template {
   max-width: 290px;
   width: 100%;
   min-height: 40px;
+  margin-top: 5px;
+  margin-bottom: 0;
   border: 1px solid #D9DADB;
   border-radius: 5px;
 }
@@ -663,12 +665,14 @@ template {
   width: 100%;
   min-height: 120px;
   max-width: 290px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 6px;
   border: 1px solid #D9DADB;
   border-radius: 5px;
 }
 
 .modal__button {
+  padding: 10px 25px;
   margin-top: 30px;
   min-width: 72px;
   min-height: 20px;
@@ -691,13 +695,14 @@ template {
 
 .modal__form {
   display: block;
-  position: static;
 }
 
 .modal__theme {
+  padding-left: 10px;
   max-width: 290px;
   width: 100%;
   min-height: 40px;
+  margin-top: 5px;
   margin-bottom: 15px;
   border: 1px solid #D9DADB;
   border-radius: 5px;
@@ -709,11 +714,6 @@ template {
   color: #939699;
 }
 
-.modal__agreement {
-  position: relative;
-  min-height: 40px;
-}
-
 svg {
   fill: white;
 }
@@ -721,12 +721,23 @@ svg {
 .label-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
   color: #262D33;
+}
+
+.label-title__theme {
+  margin-bottom: 5px;
+}
+
+.label-title__message {
+  margin-bottom: 5px;
+}
+
+.label-title__email {
+  margin-bottom: 5px;
 }
 
 .label-info {
@@ -1025,6 +1036,11 @@ svg {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.useful-image {
+  cursor: pointer;
 }
 
 .articles {
@@ -1081,6 +1097,7 @@ svg {
 .card-main__author-avatar {
   border-radius: 50%;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .card-main__author-cite {
@@ -1105,6 +1122,7 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   color: #262D33;
+  cursor: pointer;
 }
 
 .card-main__author-count {
@@ -1138,6 +1156,7 @@ svg {
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
+  cursor: pointer;
 }
 
 .card-main__info-about {
@@ -1148,6 +1167,11 @@ svg {
   font-size: 14px;
   line-height: 20px;
   color: #4B5157;
+  cursor: pointer;
+}
+
+.card-main__image {
+  cursor: pointer;
 }
 
 .card-popular {
@@ -1208,6 +1232,7 @@ svg {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .card-popular__author {
@@ -1222,6 +1247,7 @@ svg {
 .card-popular__author-avatar {
   margin-right: 10px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .card-popular__author-name {
@@ -1233,6 +1259,7 @@ svg {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.85;
+  cursor: pointer;
 }
 
 .card-popular__author-details {
@@ -1327,7 +1354,7 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 12px 90px 13px 92px;
+  padding: 11px 89px 13px 89px;
 }
 
 .card-check__download {
@@ -1337,6 +1364,10 @@ svg {
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.card-check__icon {
+  margin-right: 10px;
 }
 
 .card-instruments {
@@ -1353,6 +1384,7 @@ svg {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .card-instruments__about {
@@ -1367,6 +1399,7 @@ svg {
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
+  cursor: pointer;
 }
 
 .card-tags {
@@ -1481,6 +1514,7 @@ svg {
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
+  cursor: pointer;
 }
 
 .card-short__info {
@@ -1491,6 +1525,7 @@ svg {
   font-size: 14px;
   line-height: 20px;
   color: #4B5157;
+  cursor: pointer;
 }
 
 .card-short__info--second {
@@ -1534,6 +1569,18 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.card-links__images-facebook {
+  fill: #4267B2;
+}
+
+.card-links__images-twitter {
+  fill: #1DA1F2;
+}
+
+.card-links__images-youtube {
+  fill: #FF0000;
 }
 
 .investigation {
@@ -1590,6 +1637,24 @@ svg {
 
 .parallax-window {
   background: transparent;
+}
+
+@media (min-width: 993px) {
+  .card-links__images-facebook:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px #4267B2;
+            box-shadow: 0 0 20px #4267B2;
+  }
+  .card-links__images-twitter:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px #1DA1F2;
+            box-shadow: 0 0 20px #1DA1F2;
+  }
+  .card-links__images-youtube:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px #FF0000;
+            box-shadow: 0 0 20px #FF0000;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1732,6 +1797,9 @@ svg {
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
     grid-row: 6 / 7;
+  }
+  .card-check__footer {
+    padding: 11px 78px 13px 78px;
   }
   .card-popular {
     -ms-grid-column: 3;

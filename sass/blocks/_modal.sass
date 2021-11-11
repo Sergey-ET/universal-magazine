@@ -36,8 +36,8 @@
       opacity: 1
   &__close
     position: absolute
-    top: 17px
-    right: 18px
+    top: 15px
+    right: 15px
     text-decoration: none
     cursor: pointer
   &__title
@@ -53,6 +53,8 @@
     max-width: 290px
     width: 100%
     min-height: 40px
+    margin-top: 5px
+    margin-bottom: 0
     border: 1px solid #D9DADB
     border-radius: 5px
     &:not(:first-child)
@@ -68,10 +70,12 @@
     width: 100%
     min-height: 120px
     max-width: 290px
-    margin-bottom: 15px
+    margin-top: 5px
+    margin-bottom: 6px
     border: 1px solid #D9DADB
     border-radius: 5px
   &__button
+    padding: 10px 25px
     margin-top: 30px
     min-width: 72px
     min-height: 20px
@@ -90,11 +94,12 @@
     color: #E0E0E0
   &__form
     display: block
-    position: static
   &__theme
+    padding-left: 10px
     max-width: 290px
     width: 100%
     min-height: 40px
+    margin-top: 5px
     margin-bottom: 15px
     border: 1px solid #D9DADB
     border-radius: 5px
@@ -104,21 +109,23 @@
     font-size: 14px
     line-height: 20px
     color: #939699
-  &__agreement
-    position: relative
-    min-height: 40px
 svg
   fill: white
 .label
   &-title
     margin: 0
     padding: 0
-    margin-bottom: 5px
     font-style: normal
     font-weight: 900
     font-size: 14px
     line-height: 20px
     color: $dark
+    &__theme
+      margin-bottom: 5px
+    &__message
+      margin-bottom: 5px
+    &__email
+      margin-bottom: 5px
   &-info
     display: flex
     align-items: center
