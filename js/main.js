@@ -54,6 +54,9 @@ $(document).ready(function () {
           required: 'Пожалуйста, введите адрес Вашей эл. почты',
           email: 'Адрес эл. почты должен быть в формате name@domain.com',
         },
+        checkbox: {
+          required: 'Это обязательное поле!',
+        },
       },
     })
   })

@@ -5,19 +5,17 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
+$theme = $_POST['theme'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = 'New request from Best Tour Plan';
+$title = 'Новая заявка с сайта Universal Magazine';
 $body = "
-<h2>New Request</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br>
+<h2>Новая Заявка</h2>
+<b>Тема:</b> $theme<br>
 <b>Email:</b> $email<br><br>
-<b>Message:</b><br>$message
+<b>Сообщение:</b><br>$message
 ";
 
 // Настройки PHPMailer
