@@ -71,4 +71,47 @@ $(document).ready(function () {
     $(activeContent).addClass('reco-content__item--active')
     $(this).addClass('reco-tabs__item--active')
   })
+
+  $('.news-card__info-bookmark-1').on('click', function () {
+    if ($('.news-card__info-bookmark-1').css('fill') == 'rgb(188, 191, 194)') {
+      $('.news-card__info-bookmark-1').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.news-card__info-bookmark-1').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
+  $('.news-card__info-bookmark-2').on('click', function () {
+    if ($('.news-card__info-bookmark-2').css('fill') == 'rgb(188, 191, 194)') {
+      $('.news-card__info-bookmark-2').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.news-card__info-bookmark-2').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
+  $('.news-card__info-bookmark-3').on('click', function () {
+    if ($('.news-card__info-bookmark-3').css('fill') == 'rgb(188, 191, 194)') {
+      $('.news-card__info-bookmark-3').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.news-card__info-bookmark-3').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
+  $('.news-card__info-bookmark-4').on('click', function () {
+    if ($('.news-card__info-bookmark-4').css('fill') == 'rgb(188, 191, 194)') {
+      $('.news-card__info-bookmark-4').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.news-card__info-bookmark-4').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
+  $('.news-card__info-bookmark-5').on('click', function () {
+    if ($('.news-card__info-bookmark-5').css('fill') == 'rgb(188, 191, 194)') {
+      $('.news-card__info-bookmark-5').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.news-card__info-bookmark-5').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
+  $('.news-card__info-bookmark-6').on('click', function () {
+    if ($('.news-card__info-bookmark-6').css('fill') == 'rgb(188, 191, 194)') {
+      $('.news-card__info-bookmark-6').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.news-card__info-bookmark-6').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
 })
