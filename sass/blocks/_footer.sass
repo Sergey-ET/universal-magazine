@@ -1,0 +1,139 @@
+.footer
+  padding-top: 60px
+  padding-bottom: 55px
+  background-color: $light
+  &-subscription
+    &__title
+      margin: 0
+      margin-bottom: 25px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      text-align: center
+      color: $dark
+    &__form
+      position: relative
+      display: flex
+      justify-content: center
+      overflow: visible
+    &__input
+      margin-right: 10px
+      padding: 10px 5px 10px 13px
+      width: 313px
+      min-height: 40px
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      &::placeholder
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #939699
+    &__button
+      padding: 10px 25px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      background-color: $button
+      border-radius: 20px
+      border: none
+      cursor: pointer
+  &-menu
+    margin-top: 70px
+    margin-bottom: 64px
+    display: flex
+  &-title
+    margin: 0
+    margin-top: 30px
+    margin-bottom: 25px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $dark
+    cursor: pointer
+  &-list
+    margin: 0
+    padding: 0
+    list-style: none
+  &-item
+    margin-bottom: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text
+    cursor: pointer
+    &:last-child
+      margin-bottom: 0
+  &-news
+    width: 195px
+    border-top: 5px solid #FF4F52
+  &-articles
+    width: 195px
+    border-top: 5px solid #AC8EE3
+  &-video
+    width: 195px
+    border-top: 5px solid #4592FF
+  &-courses
+    width: 195px
+    border-top: 5px solid #FFA34D
+  &-information
+    width: 195px
+    border-top: 5px solid #3DC47E
+  &-categories
+    width: 165px
+    border-top: 5px solid #6E99AE
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 40px
+    padding: 29px 0 26px 0
+    border-top: 1px solid #D9DADB
+    border-bottom: 1px solid #D9DADB
+    &__menu
+      margin-right: auto
+    &__list
+      display: flex
+      margin: 0
+      padding: 0
+    &__item
+      margin-left: 30px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+      list-style: none
+      cursor: pointer
+  &-links
+    text-decoration: none
+  &-link
+    margin-left: 11px
+  &-disclaimer
+    display: flex
+    justify-content: space-between
+    &__text
+      margin: 0
+      max-width: 750px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #939699
+    &__copyright
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #939699
+.footer-subscription__form #email-error
+  position: absolute
+  top: 45px
