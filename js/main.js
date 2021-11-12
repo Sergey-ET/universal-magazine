@@ -114,4 +114,21 @@ $(document).ready(function () {
       $('.news-card__info-bookmark-6').css({ fill: 'rgb(188, 191, 194)' })
     }
   })
+
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+  })
 })

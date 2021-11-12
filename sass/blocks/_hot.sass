@@ -1,0 +1,207 @@
+.swiper
+  &-pagination
+    &-bullet
+      &-active
+        width: 8px
+        background-color: $light
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets, .swiper-pagination-bullet
+  margin: var(--swiper-pagination-bullet-horizontal-gap,8px)
+  bottom: 27px
+  left: -8px
+.hot
+  background-color: $dark
+  padding: 60px 0
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    gap: 30px
+  &-slider
+    width: 50%
+    height: 570px
+    &__item
+      position: relative
+    &__image
+      position: absolute
+      object-fit: cover
+      border-radius: 10px
+    &__label
+      position: absolute
+      top: 18px
+      left: 18px
+      padding: 5px 12px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      background-color: #3DC47E
+      border-radius: 3px
+    &__avatar
+      position: absolute
+      top: 50px
+      left: 50%
+      transform: translateX(-50%)
+      border-radius: 50%
+      cursor: pointer
+    &__name
+      position: absolute
+      top: 103px
+      left: 50%
+      transform: translateX(-50%)
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.85
+      cursor: pointer
+    &__job
+      position: absolute
+      top: 125px
+      left: 50%
+      transform: translateX(-50%)
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.4
+    &__title
+      position: absolute
+      top: 170px
+      left: 50%
+      margin: 0
+      max-width: 455px
+      width: 100%
+      transform: translateX(-50%)
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $light
+      text-align: center
+      cursor: pointer
+    &__details
+      position: absolute
+      top: 365px
+      left: 50%
+      padding: 10px 20px
+      transform: translateX(-50%)
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      background: $button
+      border-radius: 20px
+      text-decoration: none
+      cursor: pointer
+    &__images
+      margin-right: 8px
+    &__count
+      margin-left: 8px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #C5E4FC
+  &-other
+    width: 50%
+  &-career
+    position: relative
+    display: flex
+    margin-bottom: 30px
+    width: 100%
+    min-height: 370px
+    background-color: #B4D1E0
+    background-image: url(../img/hot/hot-2.webp)
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 10px
+    &__about
+      padding-top: 32px
+      padding-left: 35px
+      max-width: 250px
+      width: 100%
+    &__image
+      position: absolute
+      border-radius: 10px
+    &__topic
+      display: inline-block
+      margin-bottom: 20px
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #6E99AE
+    &__title
+      margin: 0
+      margin-bottom: 15px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $dark
+    &__info
+      margin: 0
+      margin-bottom: 45px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text
+    &__button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 154px
+      padding: 10px 17px 10px 22px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      background-color: $button
+      border-radius: 20px
+      text-decoration: none
+  &-box
+    padding: 25px 20px 27px 25px
+    border-radius: 10px
+    background-color: $light
+    width: 50%
+    &-wrapper
+      display: flex
+      gap: 30px
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $dark
+      cursor: pointer
+    &__info
+      margin: 0
+      margin-bottom: 7px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text
+      cursor: pointer
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
