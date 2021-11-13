@@ -507,6 +507,10 @@ template {
   background-color: #262D33;
 }
 
+.header--light {
+  background-color: #ffffff;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +552,10 @@ template {
   line-height: 20px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.navbar-menu__link--light {
+  color: #939699;
 }
 
 .navbar__menu-button {
@@ -2725,7 +2733,13 @@ svg {
     bottom: 0;
     background-color: #262D33;
   }
+  .navbar-menu--light {
+    background-color: #ffffff;
+  }
   .navbar-menu--visible {
+    display: block;
+  }
+  .navbar-menu--visible--light {
     display: block;
   }
   .navbar-menu__list {
@@ -2776,10 +2790,16 @@ svg {
     border: none;
     cursor: pointer;
   }
+  .menu-button--light {
+    background-color: #ffffff;
+  }
   .menu-button__line {
     width: 20px;
     height: 1px;
     background-color: #ffffff;
+  }
+  .menu-button__line--light {
+    background-color: #262D33;
   }
   .reco-wrapper {
     -ms-grid-columns: 70% 30%;

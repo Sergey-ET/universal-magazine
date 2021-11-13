@@ -3,6 +3,10 @@ $(document).ready(function () {
   menuButton.on('click', function () {
     $('.navbar-menu').toggleClass('navbar-menu--visible')
   })
+  var menuButtonLight = $('.menu-button--light')
+  menuButtonLight.on('click', function () {
+    $('.navbar-menu--light').toggleClass('navbar-menu--visible--light')
+  })
 
   var modalButton = $('[data-toggle=modal]')
   var closeModalButton = $('.modal__close')
