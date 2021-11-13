@@ -171,9 +171,19 @@
       &__text
         margin-bottom: 20px
   .hero
+    &-wrapper
+      padding-left: 0
+      padding-right: 0
     &-title
       font-size: 45px
       line-height: 60px
+    &-bookmark
+      top: 35px
+      left: -4px
+  .part1
+    &-wrapper
+      padding-left: 0
+      padding-right: 0
 @media (max-width: 768px)
   .header
     &--mobile
@@ -344,18 +354,24 @@
       margin: 0
       margin-right: 10px
   .hero
-    &-wrapper
-      padding-left: 0
-      padding-right: 0
     &-title
       font-size: 35px
       line-height: 50px
     &-text
       font-size: 14px
       line-height: 26px
-    &-bookmark
-      top: 35px
-      left: -4px
+  .part1
+    &-wrapper
+      flex-direction: column
+      gap: 0
+    &-paragraph
+      font-size: 16px
+      line-height: 30px
+      width: 100%
+    &-author
+      order: -1
+      margin-top: -115px
+      margin-bottom: 30px
 @media (max-width: 576px)
   .card
     &-main

@@ -126,7 +126,7 @@ $(document).ready(function () {
     }
   })
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.hot-slider', {
     direction: 'horizontal',
     loop: true,
 
