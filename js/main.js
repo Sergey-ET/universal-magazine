@@ -118,6 +118,13 @@ $(document).ready(function () {
       $('.news-card__info-bookmark-6').css({ fill: 'rgb(188, 191, 194)' })
     }
   })
+  $('.hero-bookmark').on('click', function () {
+    if ($('.hero-bookmark').css('fill') == 'rgb(188, 191, 194)') {
+      $('.hero-bookmark').css({ fill: 'rgb(255, 79, 82)' })
+    } else {
+      $('.hero-bookmark').css({ fill: 'rgb(188, 191, 194)' })
+    }
+  })
 
   const swiper = new Swiper('.swiper', {
     direction: 'horizontal',

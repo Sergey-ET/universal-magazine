@@ -170,6 +170,10 @@
       flex-direction: column
       &__text
         margin-bottom: 20px
+  .hero
+    &-title
+      font-size: 45px
+      line-height: 60px
 @media (max-width: 768px)
   .header
     &--mobile
@@ -317,6 +321,7 @@
       &__form
         flex-direction: column
       &__input
+        width: 100%
         margin-right: 0
         margin-bottom: 40px
     &-menu
@@ -338,6 +343,19 @@
     &-link
       margin: 0
       margin-right: 10px
+  .hero
+    &-wrapper
+      padding-left: 0
+      padding-right: 0
+    &-title
+      font-size: 35px
+      line-height: 50px
+    &-text
+      font-size: 14px
+      line-height: 26px
+    &-bookmark
+      top: 35px
+      left: -4px
 @media (max-width: 576px)
   .card
     &-main
@@ -392,3 +410,19 @@
         color: $light
       &__info
         color: $light
+  .hero
+    &-header
+      flex-direction: column
+      align-items: flex-start
+      &__topic
+        margin-bottom: 20px
+      &__menu
+        flex-direction: column
+      &__link
+        &-home
+          margin-bottom: 20px
+    &-title
+      font-size: 25px
+      line-height: 30px
+    &-bookmark
+      top: 100px
