@@ -2879,7 +2879,7 @@ svg {
 }
 
 .part2-paragraph:last-child {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .part2-quote {
@@ -2979,6 +2979,40 @@ svg {
   font-size: 12px;
   line-height: 15px;
   color: #939699;
+}
+
+.tags {
+  padding-top: 13px;
+  padding-bottom: 30px;
+}
+
+.tags-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px 0;
+  padding-left: 97px;
+  padding-right: 97px;
+}
+
+.tags-wrapper__tag {
+  display: block;
+  padding: 5px 15px;
+  margin-right: 8px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #D9DADB;
+  border-radius: 5px;
+  color: #262D33;
+  cursor: pointer;
+}
+
+.tags-wrapper__tag:last-child {
+  margin-right: 0;
 }
 
 @media (min-width: 993px) {
@@ -3273,6 +3307,10 @@ svg {
     left: 18px;
   }
   .part2-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tags-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
