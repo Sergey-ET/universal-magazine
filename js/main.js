@@ -126,7 +126,7 @@ $(document).ready(function () {
     }
   })
 
-  const swiper = new Swiper('.hot-slider', {
+  const hotSlider = new Swiper('.hot-slider', {
     direction: 'horizontal',
     loop: true,
 
@@ -140,6 +140,21 @@ $(document).ready(function () {
       delay: 2000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
+    },
+  })
+
+  const articleSlider = new Swiper('.slider-article1', {
+    direction: 'horizontal',
+    loop: true,
+
+    navigation: {
+      nextEl: '.slider-article1__button--next',
+      prevEl: '.slider-article1__button--prev',
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
   })
 })

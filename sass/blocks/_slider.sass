@@ -1,0 +1,67 @@
+.slider
+  padding-top: 42px
+  padding-bottom: 30px
+  &-wrapper
+    border: 1px solid #D9DADB
+    border-radius: 10px
+    overflow: hidden
+  &-article1
+    width: 1140px
+    height: 555px
+    &__item
+      position: relative
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 60px
+      height: 60px
+      border: none
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 60px
+      background-color: transparent
+      &--next
+        right: 36px
+        background-image: url(../img/slider/slider-arrow-right.svg)
+      &--prev
+        left: 34px
+        background-image: url(../img/slider/slider-arrow-left.svg)
+  &-details
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__text
+      padding: 12px 10px 13px 35px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text
+    &__author
+      display: flex
+      padding: 12px 10px 13px 30px
+      width: 262px
+      border-left: 1px solid #D9DADB
+    &__avatar
+      margin-right: 10px
+      border-radius: 50%
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__name
+      margin-bottom: 1px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text
+    &__job
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699

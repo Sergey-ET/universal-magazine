@@ -76,6 +76,16 @@
         gap: 20px
   .to-top
     display: none
+  .slider
+    &-article1
+      width: 100%
+      height: 480px
+  .swiper
+    &-slide
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -184,6 +194,15 @@
     &-wrapper
       padding-left: 0
       padding-right: 0
+  .slider
+    &-article1
+      height: 380px
+      &__button
+        background-size: 45px
+        &--next
+          right: 18px
+        &--prev
+          left: 18px
 @media (max-width: 768px)
   .header
     &--mobile
@@ -372,6 +391,23 @@
       order: -1
       margin-top: -115px
       margin-bottom: 30px
+  .slider
+    &-article1
+      height: 380px
+    &-details
+      &__text
+        padding: 12px 5px 13px 15px
+        font-size: 12px
+        line-height: 18px
+      &__author
+        padding: 12px 5px 13px 15px
+        width: 60%
+      &__name
+        font-size: 12px
+        line-height: 18px
+      &__job
+        font-size: 10px
+        line-height: 12px
 @media (max-width: 576px)
   .card
     &-main
@@ -442,3 +478,23 @@
       line-height: 30px
     &-bookmark
       top: 100px
+  .slider
+    &-article1
+      height: 290px
+      &__button
+        background-size: 30px
+        &--next
+          right: 0
+        &--prev
+          left: 0
+    &-details
+      flex-direction: column
+      &__text
+        border-bottom: 1px solid #D9DADB
+      &__author
+        width: 100%
+        border-left: none
+@media (max-width: 480px)
+  .slider
+    &-article1
+      height: 190px
