@@ -2982,7 +2982,7 @@ svg {
 }
 
 .tags {
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 30px;
 }
 
@@ -3005,6 +3005,7 @@ svg {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+  text-decoration: none;
   border: 1px solid #D9DADB;
   border-radius: 5px;
   color: #262D33;
@@ -3014,6 +3015,99 @@ svg {
 
 .tags-wrapper__tag:last-child {
   margin-right: 0;
+}
+
+.sharing {
+  padding-top: 28px;
+  padding-bottom: 60px;
+}
+
+.sharing-wrapper {
+  padding: 0 97px 30px 97px;
+}
+
+.sharing-line {
+  margin: 0;
+  margin-bottom: 30px;
+  max-width: 653px;
+  width: 100%;
+  color: #D9DADB;
+}
+
+.sharing-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+}
+
+.sharing-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 14px 0;
+}
+
+.sharing-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  padding: 10px 21px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #4592FF;
+  cursor: pointer;
+}
+
+.sharing-link-like {
+  margin-right: 14px;
+}
+
+.sharing-link-facebook {
+  margin-right: 14px;
+}
+
+.sharing-link__image {
+  margin-right: 8px;
+}
+
+.sharing-link__name {
+  margin-right: 8px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.sharing-link__count {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sharing-link__count-like {
+  color: #FFC4C9;
+}
+
+.sharing-link__count-facebook {
+  color: #BBC6FF;
+}
+
+.sharing-link__count-tweet {
+  color: #C5E4FC;
 }
 
 @media (min-width: 993px) {
@@ -3312,6 +3406,10 @@ svg {
     padding-right: 0;
   }
   .tags-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sharing-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
