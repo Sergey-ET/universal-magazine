@@ -2879,7 +2879,7 @@ svg {
 }
 
 .part2-paragraph:last-child {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .part2-quote {
@@ -2982,7 +2982,7 @@ svg {
 }
 
 .tags {
-  padding-top: 13px;
+  padding-top: 27px;
   padding-bottom: 30px;
 }
 
@@ -3008,6 +3008,7 @@ svg {
   border: 1px solid #D9DADB;
   border-radius: 5px;
   color: #262D33;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
