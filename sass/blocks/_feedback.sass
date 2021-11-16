@@ -1,0 +1,70 @@
+.feedback
+  padding-top: 30px
+  padding-bottom: 30px
+  &-wrapper
+    padding-left: 97px
+    padding-right: 293px
+  &-block
+    margin: 0
+    padding: 30px 40px 35px 30px
+    background-color: #F5F5F5
+    border-radius: 10px
+  &-title
+    margin: 0
+    margin-left: 96px
+    margin-bottom: 15px
+    font-family: "Roboto Slab", serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: $dark
+  &-input
+    display: flex
+  &-form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 26px
+      left: -21px
+      border: 10px solid transparent
+      border-right: 12px solid #D9DADB
+    &::after
+      content: ""
+      position: absolute
+      top: 27px
+      left: -18px
+      border: 9px solid transparent
+      border-right: 11px solid $light
+  &-image
+    border-radius: 50%
+    margin-right: 20px
+  &__message
+    width: 100%
+    min-height: 130px
+    padding: 10px 5px 5px 10px
+    resize: none
+    border: 1px solid #D9DADB
+    border-radius: 5px
+  &-button
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 21px 10px 20px
+    margin-top: 15px
+    margin-left: 3px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+    background-color: $button
+    border: none
+    border-radius: 20px
+    cursor: pointer
+    &__name
+      margin-right: 6px

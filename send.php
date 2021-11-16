@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $theme = $_POST['theme'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$comment = $_POST['comment'];
 
 // Формирование самого письма
 $title = 'Новая заявка с сайта Universal Magazine';
@@ -15,7 +16,8 @@ $body = "
 <h2>Новая Заявка</h2>
 <b>Тема:</b> $theme<br>
 <b>Email:</b> $email<br><br>
-<b>Сообщение:</b><br>$message
+<b>Сообщение:</b><br>$message<br><br>
+<b>Комментарий:</b><br>$comment
 ";
 
 // Настройки PHPMailer

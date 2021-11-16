@@ -725,7 +725,7 @@
                 <span class="comments-header__count">19</span>
               </div>
               <!-- /.comments-header__name -->
-              <a href="#" class="comments-header__link">
+              <a href="#add-comment" class="comments-header__link">
                 <img
                   src="./img/comments/pencil.svg"
                   alt="Иконка ручка"
@@ -1117,8 +1117,50 @@
         <!-- /.container -->
       </section>
 
-      <section class="feedback">
-        <h2 class="visually-hidden">Что вы думаете на этот счет?</h2>
+      <section id="add-comment" class="feedback">
+        <div class="container">
+          <div class="feedback-wrapper">
+            <div class="feedback-block">
+              <h2 class="feedback-title">Что вы думаете на этот счет?</h2>
+              <div class="feedback-input">
+                <img
+                  src="./img/feedback/feedback-user-avatar.webp"
+                  alt="Фото девушки в шарфе и шапке"
+                  class="feedback-image"
+                  width="75"
+                  height="75"
+                />
+                <form
+                  action="send.php"
+                  method="POST"
+                  class="form feedback-form"
+                >
+                  <textarea
+                    class="feedback__message"
+                    name="comment"
+                    cols="100"
+                    required
+                    minlength="100"
+                  ></textarea>
+                  <button class="feedback-button">
+                    <span class="feedback-button__name">Отправить</span>
+                    <img
+                      src="./img/recommendations/reco-arrow.svg"
+                      alt="Иконка стрелка вправо"
+                      class="feedback-button__arrow"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </form>
+              </div>
+              <!-- /.feedback-form -->
+            </div>
+            <!-- /.feedback-block -->
+          </div>
+          <!-- /.feedback-wrapper -->
+        </div>
+        <!-- /.container -->
       </section>
     </main>
 
@@ -1238,7 +1280,7 @@
                 <li class="footer-bottom__item">Контакты</li>
                 <li class="footer-bottom__item">Работа у нас</li>
                 <li class="footer-bottom__item">Реклама</li>
-                <li class="footer-bottom__item">Обратная связь</li>
+                <li class="footer-bottom__item">Партнерство</li>
               </ul>
             </nav>
             <div class="footer-bottom__links">

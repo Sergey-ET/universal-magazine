@@ -3406,6 +3406,115 @@ svg {
   color: #262D33;
 }
 
+.feedback {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.feedback-wrapper {
+  padding-left: 97px;
+  padding-right: 293px;
+}
+
+.feedback-block {
+  margin: 0;
+  padding: 30px 40px 35px 30px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.feedback-title {
+  margin: 0;
+  margin-left: 96px;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.feedback-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.feedback-form::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: -21px;
+  border: 10px solid transparent;
+  border-right: 12px solid #D9DADB;
+}
+
+.feedback-form::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: -18px;
+  border: 9px solid transparent;
+  border-right: 11px solid #ffffff;
+}
+
+.feedback-image {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.feedback__message {
+  width: 100%;
+  min-height: 130px;
+  padding: 10px 5px 5px 10px;
+  resize: none;
+  border: 1px solid #D9DADB;
+  border-radius: 5px;
+}
+
+.feedback-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 21px 10px 20px;
+  margin-top: 15px;
+  margin-left: 3px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #4592FF;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.feedback-button__name {
+  margin-right: 6px;
+}
+
 @media (min-width: 993px) {
   .svg-link-facebook:hover {
     border-radius: 50%;
@@ -3722,6 +3831,10 @@ svg {
     gap: 20px;
   }
   .comments-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .feedback-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
@@ -4229,6 +4342,40 @@ svg {
   .comments-card__info {
     font-size: 14px;
     line-height: 20px;
+  }
+  .feedback-block {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .feedback-title {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .feedback-image {
+    margin-bottom: 20px;
+  }
+  .feedback-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback-form::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: 28px;
+    border: 10px solid transparent;
+    border-bottom: 12px solid #D9DADB;
+  }
+  .feedback-form::after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 29px;
+    border: 9px solid transparent;
+    border-bottom: 11px solid #ffffff;
   }
 }
 

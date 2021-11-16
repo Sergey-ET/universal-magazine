@@ -231,6 +231,10 @@
     &-wrapper
       padding-left: 0
       padding-right: 0
+  .feedback
+    &-wrapper
+      padding-left: 0
+      padding-right: 0
 @media (max-width: 768px)
   .header
     &--mobile
@@ -579,6 +583,33 @@
       &__info
         font-size: 14px
         line-height: 20px
+  .feedback
+    &-block
+      padding-right: 25px
+      padding-left: 25px
+    &-title
+      margin-left: 0
+      font-size: 18px
+      line-height: 20px
+    &-image
+      margin-bottom: 20px
+    &-input
+      flex-direction: column
+    &-form
+      &::before
+        content: ""
+        position: absolute
+        top: -21px
+        left: 28px
+        border: 10px solid transparent
+        border-bottom: 12px solid #D9DADB
+      &::after
+        content: ""
+        position: absolute
+        top: -19px
+        left: 29px
+        border: 9px solid transparent
+        border-bottom: 11px solid $light
 @media (max-width: 480px)
   .slider
     &-article1
