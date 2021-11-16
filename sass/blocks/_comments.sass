@@ -1,0 +1,137 @@
+.comments
+  padding-top: 30px
+  &-wrapper
+    padding-top: 60px
+    padding-bottom: 30px
+    padding-left: 97px
+    padding-right: 293px
+  &-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 26px
+    &__name
+      display: flex
+      align-items: baseline
+    &__title
+      margin: 0
+      margin-right: 10px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: $dark
+    &__count
+      font-style: normal
+      font-weight: normal
+      font-size: 40px
+      line-height: 50px
+      text-transform: uppercase
+      color: #939699
+    &__link
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 10px 20px 10px 20px
+      text-decoration: none
+      border: 1px solid #D9DADB
+      border-radius: 20px
+    &__text
+      margin-left: 10px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+  &-card
+    display: flex
+    padding-top: 20px
+    padding-bottom: 29px
+    border-top: 1px solid #D9DADB
+    &--hidden
+      display: none
+      &--visible
+        display: flex !important
+    &--answer
+      padding-left: 90px
+    &__avatar
+      margin-right: 14px
+      border-radius: 50%
+      object-fit: cover
+    &__author
+      display: flex
+      align-items: center
+    &__name
+      margin-right: 10px
+      font-family: "Roboto Slab", serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $dark
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__info
+      margin: 0
+      margin-top: 11px
+      margin-bottom: 14px
+      max-width: 570px
+      width: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: $text
+      &--mb
+        margin-bottom: 45px
+    &__details
+      display: flex
+      align-items: center
+      &-comment
+        margin-right: 5px
+      &-text
+        margin-right: 15px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $dark
+      &-thumbup
+        margin-right: 12px
+      &-count
+        display: inline-block
+        margin-right: 10px
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+        &--positive
+          font-weight: 700
+          color: #3DC47E
+        &--negative
+          font-weight: 700
+          color: #FF4F52
+  &-button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding-top: 14px
+    padding-bottom: 15px
+    border: 1px solid #D9DADB
+    border-radius: 25px
+    background-color: $light
+    cursor: pointer
+    &__image
+      margin-left: 25px
+    &__name
+      margin-left: 7px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark

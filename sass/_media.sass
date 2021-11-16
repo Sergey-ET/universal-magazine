@@ -89,6 +89,11 @@
   .popular
     &-wrapper
       gap: 20px
+  .comments
+    &-header
+      &__title
+        font-size: 35px
+        line-height: 45px
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -222,6 +227,10 @@
     &-wrapper
       grid-template-columns: repeat(2, 6fr)
       gap: 20px
+  .comments
+    &-wrapper
+      padding-left: 0
+      padding-right: 0
 @media (max-width: 768px)
   .header
     &--mobile
@@ -447,6 +456,22 @@
     &-wrapper
       grid-template-columns: 1fr
       gap: 30px
+  .comments
+    &-header
+      flex-direction: column
+      align-items: flex-start
+      gap: 10px
+      &__title
+        font-size: 30px
+        line-height: 40px
+      &__count
+        font-size: 30px
+        line-height: 40px
+    &-card
+      flex-direction: column
+      &__info
+        font-size: 16px
+        line-height: 25px
 @media (max-width: 576px)
   .card
     &-main
@@ -533,6 +558,27 @@
       &__author
         width: 100%
         border-left: none
+  .sharing
+    &-title
+      font-size: 20px
+      line-height: 30px
+  .comments
+    &-header
+      &__title
+        font-size: 24px
+        line-height: 34px
+      &__count
+        font-size: 20px
+        line-height: 30px
+    &-card
+      &--answer
+        padding-left: 45px
+      &__name
+        font-size: 14px
+        line-height: 22px
+      &__info
+        font-size: 14px
+        line-height: 20px
 @media (max-width: 480px)
   .slider
     &-article1

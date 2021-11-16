@@ -157,4 +157,11 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   })
+
+  var commentsButton = $('.comments-button')
+  commentsButton.on('click', function () {
+    $('.comments-card--hidden')
+      .toggle('slow')
+      .toggleClass('comments-card--hidden--visible')
+  })
 })
