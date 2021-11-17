@@ -1147,7 +1147,11 @@
                     required
                     minlength="100"
                   ></textarea>
-                  <button class="feedback-button">
+                  <button
+                    type="submit"
+                    name="comment-send"
+                    class="feedback-button"
+                  >
                     <span class="feedback-button__name">Отправить</span>
                     <img
                       src="./img/recommendations/reco-arrow.svg"
@@ -1188,7 +1192,13 @@
                 name="email"
                 required
               />
-              <button class="footer-subscription__button">Подписаться</button>
+              <button
+                type="submit"
+                name="email-send"
+                class="footer-subscription__button"
+              >
+                Подписаться
+              </button>
             </form>
           </div>
           <!-- /.footer-subscription -->
@@ -1482,7 +1492,9 @@
             />
             Согласен с обработкой данных
           </label>
-          <button class="button modal__button">Отправить</button>
+          <button type="submit" name="modal-send" class="button modal__button">
+            Отправить
+          </button>
         </form>
       </div>
       <!-- /.modal__dialog -->
