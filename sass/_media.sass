@@ -301,22 +301,36 @@
           background-color: $dark
   .reco
     &-wrapper
+      margin-top: -225px
       grid-template-columns: 70% 30%
     &-content
+      height: 300px
       &__background
         width: 70%
         object-fit: cover
+        height: 100%
+      &__item
     &-author
-      left: 20px
+      top: 10px
+      left: 10px
+      font-size: 8px
+      line-height: 10px
     &-theme
-      left: 20px
+      top: 110px
+      left: 10px
+      font-size: 8px
+      line-height: 10px
     &-title
-      left: 20px
+      left: 10px
+      top: 140px
       width: 50%
-      font-size: 16px
-      line-height: 20px
+      font-size: 14px
+      line-height: 18px
     &-button
-      left: 20px
+      top: 230px
+      left: 10px
+      font-size: 10px
+      line-height: 12px
     &-tabs
       &__title
         margin: 20px auto 19px auto
@@ -327,13 +341,15 @@
         flex-direction: column
         align-items: center
         justify-content: center
-        min-height: 103px
+        height: 50px
         &-title
           margin: 0
           font-size: 8px
           line-height: 10px
         &-description
           display: none
+  .background
+    height: 250px
   .useful
     &-box
       padding: 10px 30px 10px 30px

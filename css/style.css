@@ -582,7 +582,7 @@ template {
 }
 
 .background {
-  height: 472px;
+  height: 475px;
   padding-top: 100px;
   background-color: #262D33;
   color: #ffffff;
@@ -791,7 +791,7 @@ svg {
 
 .reco-wrapper {
   position: relative;
-  margin-top: -442px;
+  margin-top: -445px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 877px 1fr;
@@ -799,7 +799,7 @@ svg {
 }
 
 .reco-content {
-  min-height: 570px;
+  height: 570px;
 }
 
 .reco-content__background {
@@ -916,7 +916,6 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 570px;
   border-radius: 0 10px 10px 0;
   background-color: #fff;
 }
@@ -934,7 +933,6 @@ svg {
 }
 
 .reco-tabs__item {
-  min-height: 100px;
   border-top: 1px solid #D9DADB;
   cursor: pointer;
   background-color: #fff;
@@ -1066,7 +1064,7 @@ svg {
 }
 
 .articles {
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 60px;
   background-color: #edeff0;
 }
@@ -4085,28 +4083,43 @@ svg {
     background-color: #262D33;
   }
   .reco-wrapper {
+    margin-top: -225px;
     -ms-grid-columns: 70% 30%;
         grid-template-columns: 70% 30%;
+  }
+  .reco-content {
+    height: 300px;
   }
   .reco-content__background {
     width: 70%;
     -o-object-fit: cover;
        object-fit: cover;
+    height: 100%;
   }
   .reco-author {
-    left: 20px;
+    top: 10px;
+    left: 10px;
+    font-size: 8px;
+    line-height: 10px;
   }
   .reco-theme {
-    left: 20px;
+    top: 110px;
+    left: 10px;
+    font-size: 8px;
+    line-height: 10px;
   }
   .reco-title {
-    left: 20px;
+    left: 10px;
+    top: 140px;
     width: 50%;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .reco-button {
-    left: 20px;
+    top: 230px;
+    left: 10px;
+    font-size: 10px;
+    line-height: 12px;
   }
   .reco-tabs__title {
     margin: 20px auto 19px auto;
@@ -4127,7 +4140,7 @@ svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 103px;
+    height: 50px;
   }
   .reco-tabs__item-title {
     margin: 0;
@@ -4136,6 +4149,9 @@ svg {
   }
   .reco-tabs__item-description {
     display: none;
+  }
+  .background {
+    height: 250px;
   }
   .useful-box {
     padding: 10px 30px 10px 30px;
