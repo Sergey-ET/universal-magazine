@@ -17,6 +17,120 @@
         &:hover
           border-radius: 50%
           box-shadow: 0 0 20px #262626
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: $button
+          text-decoration: underline
+    &-button
+      &:hover
+        box-shadow: 0 0 15px $button
+  .card
+    &-check
+      &__download
+        &:hover
+          color: $button
+    &-tags
+      &__tag
+        &:hover
+          box-shadow: 0 0 5px $button
+  .reco
+    &-button
+      &:hover
+        box-shadow: 0 0 15px
+  .investigation
+    &-button
+      &:hover
+        box-shadow: 0 0 15px
+  .hot
+    &-career
+      &__button
+        &:hover
+          box-shadow: 0 0 15px
+  .hot
+    &-slider
+      &__details
+        &:hover
+          box-shadow: 0 0 15px
+  .footer
+    &-subscription
+      &__button
+        &:hover
+          box-shadow: 0 0 15px $button
+    &-news
+      &__title, &__item
+        &:hover
+          color: #FF4F52
+          text-decoration: underline
+    &-articles
+      &__title, &__item
+        &:hover
+          color: #AC8EE3
+          text-decoration: underline
+    &-video
+      &__title, &__item
+        &:hover
+          color: #4592FF
+          text-decoration: underline
+    &-courses
+      &__title, &__item
+        &:hover
+          color: #FFA34D
+          text-decoration: underline
+    &-information
+      &__title, &__item
+        &:hover
+          color: #3DC47E
+          text-decoration: underline
+    &-categories
+      &__title, &__item
+        &:hover
+          color: #6E99AE
+          text-decoration: underline
+    &-bottom
+      &__item
+        &:hover
+          color: $button
+          text-decoration: underline
+  .to-top
+    &:hover
+      box-shadow: inset 0 0 15px $button
+  .hero
+    &-header
+      &__home
+        &-name
+          &:hover
+            color: $button
+            text-decoration: underline
+      &__link
+        &:hover
+          color: $button
+          text-decoration: underline
+  .tags
+    &-wrapper
+      &__tag
+        &:hover
+          box-shadow: 0 0 5px $button
+  .sharing
+    &-link
+      &:hover
+        box-shadow: 0 0 15px $button
+  .comments
+    &-header
+      &__link
+        &:hover
+          box-shadow: 0 0 15px $button
+    &-button
+      &:hover
+        box-shadow: 0 0 15px $button
+  .feedback
+    &-button
+      &:hover
+        box-shadow: 0 0 15px $button
+  .button
+    &:hover
+      box-shadow: 0 0 15px $button
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -255,6 +369,7 @@
       right: 0
       bottom: 0
       background-color: $dark
+      overflow-y: auto
       &--light
         background-color: $light
       &--visible
@@ -399,9 +514,7 @@
         margin-right: 0
         margin-bottom: 40px
     &-menu
-      flex-direction: column
-      margin-top: 40px
-      margin-bottom: 30px
+      flex-wrap: wrap
     &-list
       margin-bottom: 20px
     &-logo
@@ -417,6 +530,8 @@
     &-link
       margin: 0
       margin-right: 10px
+  .footer-menu>nav
+    width: 192px
   .hero
     &-title
       font-size: 35px
@@ -469,10 +584,6 @@
       max-width: 100%
       &__subtitle
         max-width: 100%
-  .popular
-    &-wrapper
-      grid-template-columns: 1fr
-      gap: 30px
   .comments
     &-header
       flex-direction: column
@@ -579,6 +690,12 @@
     &-title
       font-size: 20px
       line-height: 30px
+  .popular
+    &-wrapper
+      grid-template-columns: 1fr
+      gap: 30px
+    &-card
+      max-width: 100%
   .comments
     &-header
       &__title
