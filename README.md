@@ -1,4 +1,4 @@
-# <img align="left" width="50" height="50" alt="logo" src="./img/footer/footer-logo.svg"> Universal Magazine - online magazine about Web development
+# <img align="left" width="60" height="60" alt="logo" src="./img/footer/footer-logo.svg"> Universal Magazine - online magazine about Web development
 
 Diploma project at course "Web Start" by [Glo Academy](https://glo.academy/), 15th group. Project was done in November 2022.
 
